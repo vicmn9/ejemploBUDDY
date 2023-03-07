@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defaultImage">35dp</dimen>
+    <dimen name="bigTextSize">36dp</dimen>
+    <dimen name="defaultextSize">26dp</dimen>
+    <dimen name="defaultImageSize">40dp</dimen>
+    <dimen name="defaultMargin">16dp</dimen>
+    <dimen name="textWidth">230dp</dimen>
+    <dimen name="textleftMargin">7dp</dimen>
+</resources>

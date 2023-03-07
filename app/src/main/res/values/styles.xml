@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="textStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:minHeight">@dimen/defaultImageSize</item>
+        <item name="android:maxWidth">@dimen/textWidth</item>
+        <item name="android:minWidth">@dimen/textWidth</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+</resources>

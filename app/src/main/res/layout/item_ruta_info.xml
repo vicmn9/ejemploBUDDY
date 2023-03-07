@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/containerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:id="@+id/icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:background="@drawable/esquinas_redondeadas"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/comenzarRuta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/defaultMargin"
+                android:background="@color/azul"
+                android:maxWidth="@dimen/defaultImageSize"
+                android:maxHeight="@dimen/defaultImageSize"
+                android:minWidth="@dimen/defaultImageSize"
+                android:minHeight="@dimen/defaultImageSize"
+                android:src="@drawable/navigation"></androidx.appcompat.widget.AppCompatImageButton>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/defaultMargin"
+                android:background="@color/verdeOscuro"
+                android:maxWidth="@dimen/defaultImageSize"
+                android:maxHeight="@dimen/defaultImageSize"
+                android:minWidth="@dimen/defaultImageSize"
+                android:minHeight="@dimen/defaultImageSize"
+                android:src="@drawable/access_time"></androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/favorito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/defaultMargin"
+                android:background="@color/amarillo"
+                android:maxWidth="@dimen/defaultImageSize"
+                android:maxHeight="@dimen/defaultImageSize"
+                android:minWidth="@dimen/defaultImageSize"
+                android:minHeight="@dimen/defaultImageSize"
+                android:src="@drawable/baseline_star"></androidx.appcompat.widget.AppCompatImageButton>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/origenDestinoRuta"
+            style="@style/textStyle"
+            android:layout_toEndOf="@id/icons"
+            android:layout_marginTop="27dp"
+            android:text=""
+            >
+        </androidx.appcompat.widget.AppCompatTextView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tiempoRuta"
+            style="@style/textStyle"
+            android:layout_toEndOf="@id/icons"
+            android:layout_below="@id/origenDestinoRuta"
+            android:layout_marginTop="15dp"
+            android:text=""
+            >
+        </androidx.appcompat.widget.AppCompatTextView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/distanciaRuta"
+            style="@style/textStyle"
+            android:layout_toEndOf="@id/icons"
+            android:layout_below="@id/tiempoRuta"
+            android:layout_marginTop="28dp"
+            android:text=""
+            >
+        </androidx.appcompat.widget.AppCompatTextView>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
